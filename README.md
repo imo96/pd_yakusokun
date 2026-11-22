@@ -54,13 +54,13 @@ flowchart LR
 ## 3. 共通仕様
 
 ### 3.1 データベース接続 [E4]
-- データベース名：`yakusokun`
+- データベース名：`********`
 - JDBC：PostgreSQL
 - 接続情報はプロパティファイル `db.properties`（クラスパス直下＝`src/main/java` 直下に配置）を利用。JDBCドライバは Tomcat 共通 lib に格納済み（`WEB-INF/lib` への追加は不要） <!-- 2026/10/14 PD生成時に設計書修正が必要となったため -->
   ```
-  db.url=jdbc:postgresql://localhost:5432/yakusokun
+  db.url=jdbc:postgresql://localhost:5432/********
   db.user=postgres
-  db.password=1234
+  db.password=********
   db.driver=org.postgresql.Driver
   ```
 
